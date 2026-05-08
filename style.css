@@ -17,6 +17,10 @@
     color: white;
 }
 
+#title {
+    font-size: 2.5rem;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -52,13 +56,61 @@ nav ul li a:active{
 
 main{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+main > div {
+    margin-bottom: 60px;
+}
+
+.hero {
+    height: 100dvh;
+    width: 100dvw;
+    background-color: #1d1d1f;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero > h1 {
+    font-size: 3.5rem;
+}
+
+.hero > p {
+    color: gray;
+    font-size: 1.5rem;
+}
+
+.hero > button {
+    position: absolute;
+    top: 75%;
     margin: 100px;
+    border: 2px #1d1d1f solid;
+    background-color: #111;
+    color: white;
+    font-size: 1.3rem;
+    padding: 20px;
+    border-radius: 3rem;
+    transition: scale 0.5s;
+}
+
+.hero > button:hover {
+    color: gray;
+    scale: 1.1;
+}
+
+.hero > button:active {
+    color: white;
 }
 
 .card-container {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .card{
@@ -78,11 +130,8 @@ main{
 }
 
 @media (max-width: 600px) {
-    main{
-        margin: 10px
-    }
     .card-container{
-        grid-template-columns: none;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
 

@@ -5,6 +5,10 @@
     font-family: "Quicksand", sans-serif;
 }
 
+body {
+    background-color: rgb(255, 243, 188);
+}
+
 header{
     background-color: rgb(140, 112, 87);
     height: 12rem;
@@ -24,12 +28,23 @@ header{
     font-family: "Dancing Script", cursive;
     font-size: 3rem;
     font-weight: 600;
-    color: white;
+    color: rgb(255, 248, 212);
     text-shadow: 2px 2px 0px rgb(123, 33, 0);
+    margin-left: .8rem;
 }
 
-#logo>img{
-    height: 10rem;
+#logo-img{
+    background-color: rgb(255, 248, 212);
+    border-radius: 50%;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px white dashed;
+}
+
+#logo-img>img{
+    height: 6rem;
     width: auto;
 }
 
@@ -77,12 +92,69 @@ header{
     scale: 0.9;
 }
 
+.card-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-section h2{
+    margin: 3rem;
+    color: rgb(140, 112, 87);
+}
+
+.card-container{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.product-card>img{
+    width: 14rem;
+    height: 14rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.product-card{
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(140, 112, 87);
+    color: white;
+}
+
 @media (min-width: 640px){
     header{
         height: 8rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem;
     }
     #logo>img{
         height: 5rem;
+    }
+
+    #nav-bar {
+        display: block;
+    }
+    
+    #nav-bar > ul{
+        display: flex;
+        list-style-type: none;
+        color: rgb(255, 248, 212);
+        font-size: large;
+    }
+
+    #nav-bar>ul>li {
+        margin: .5rem;
+    }
+    #nav-bar>ul>li>a{        
+        text-decoration: none;
+        color: rgb(255, 248, 212);
+    }
+    #nav-bar>ul>li>a:hover{
+        color: white;
     }
     .hero{
         height: 100dvh;

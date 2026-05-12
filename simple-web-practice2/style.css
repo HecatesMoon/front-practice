@@ -155,6 +155,11 @@ label[for="menu"]{
     background-color: rgb(140, 112, 87);
     color: white;
     box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.3);
+    transition: scale .2s;
+}
+
+.product-card:hover{
+    scale: 1.04;
 }
 
 .product-card > * {
@@ -169,8 +174,8 @@ label[for="menu"]{
 
 footer {
     background-color: rgb(140, 112, 87);
-    text-align: center;
-    font-size: x-large;
+    text-align: left;
+    font-size: large;
 }
 
 .footer-grid{
@@ -207,6 +212,7 @@ footer img {
 .bottom-footer{
     border-top: 1px rgb(255, 248, 212) solid;
     font-size: medium;
+    text-align: center;
     width: 100%;
     color: rgb(255, 248, 212);
 }
@@ -263,7 +269,7 @@ footer img {
     }
 
     footer img {
-        width: 50%;
+        height: 6rem;
         display: block;
     }
 

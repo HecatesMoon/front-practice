@@ -1,0 +1,94 @@
+:root{
+    --azul:#4C5FD5;
+    --azul-claro:#dadbf1;
+    --negro:#000000;
+    --blanco:#fff;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    background-color: var(--negro);
+    width: 100dvw;
+    color: var(--blanco);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+    font-size: x-large;
+    align-items: center;
+}
+
+header a{
+    color: var(--blanco);
+    text-decoration: none;
+    display: flex;
+    gap: .4rem;
+}
+
+header i {
+    background-color: var(--blanco);
+    color: var(--negro);
+    border-radius: 35%;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-solid{
+    display: inline-flex;
+    width: 2rem;
+    height: 2rem;
+}
+
+.header-title{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+.header-options{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.header-options > *{
+    height: 2.8rem;
+    border-radius: .5rem;
+}
+
+.header-options > input {
+    font-size: 1.3rem;
+    padding: 1.5rem 1rem;
+}
+
+.btn {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+#btn-request{
+    border: 1px var(--blanco) solid;
+    color: var(--blanco);
+    background-color: var(--negro);
+    padding: 1rem 1.2rem;;
+}
+
+#sign-in{
+    background-color: var(--azul);
+    border: none;
+    color: var(--blanco);
+    padding: 1rem 2rem;
+    transition: background-color .5s, color .5s;
+}
+
+#sign-in:hover{
+    background-color: var(--blanco);
+    color: var(--negro);
+}

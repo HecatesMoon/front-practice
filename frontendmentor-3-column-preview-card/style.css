@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    margin: 2rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    align-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    color: white;
+    padding: 3rem;
+    line-height: 1.8;
+    max-width: 20rem;
+}
+
+.card-title{
+    font-size: 3rem;
+}
+
+.card-desc {
+    font-weight:lighter;
+    margin: 1.5rem 0;
+}
+
+.card-btn{
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    border: 1px white solid;
+    font-size: 1rem;
+}
+
+#sedans button {
+    color: rgb(230, 131, 1);
+}
+#suvs button {
+    color: rgb(0, 108, 106);
+}
+#luxury button {
+    color: rgb(0, 74, 66);;
+}
+
+#sedans button:active, #suvs button:active, #luxury button:active{
+    background-color: transparent;
+    color: white;
+}
+
+#sedans{
+    background-color: rgb(230, 131, 1);
+}
+
+#suvs{
+    background-color: rgb(0, 108, 106);
+}
+
+#luxury{
+    background-color: rgb(0, 74, 66);
+}
+
+@media (min-width: 768px){
+    .card-container{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1fr;
+    }
+}
+
+@media (min-width: 1024px){
+    .card-desc{
+        margin-bottom: 6rem;
+    }
+
+}

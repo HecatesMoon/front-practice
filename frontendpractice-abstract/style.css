@@ -156,3 +156,72 @@ header i {
 .input-container:hover{
     color: var(--azul)
 }
+
+.options-section{
+    display: grid;
+    grid-template: repeat(3,1fr) / repeat(2,1fr);
+    margin: 10rem;
+    row-gap: 4rem;
+    column-gap: 2rem;
+}
+
+.info-block{
+    display: flex;
+    gap: 2rem;
+}
+
+.info-block img{
+    height: 5rem;
+}
+
+.info-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+.info-text p{
+    font-size: 1.5rem;
+}
+
+.info-text a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--azul);
+}
+
+.info-text a:hover{
+    text-decoration: underline;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+footer li{
+    list-style: none;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+footer ul li:first-child{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+footer ul:nth-child(4) li:nth-child(5){ 
+    /* no funciona */
+    font-size: 2rem;
+}
+
+footer ul:nth-child(5) {
+    grid-column-start: 6;
+}

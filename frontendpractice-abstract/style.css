@@ -161,6 +161,7 @@ header i {
     display: grid;
     grid-template: repeat(3,1fr) / repeat(2,1fr);
     margin: 10rem;
+    margin-bottom: 4rem;
     row-gap: 4rem;
     column-gap: 2rem;
 }
@@ -195,15 +196,24 @@ header i {
     text-decoration: underline;
 }
 
-footer {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
+footer{
     background-color: var(--negro);
     color: var(--blanco);
+    padding: 2rem 5rem;
+}
+
+.grid-links {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+footer #logo {
+    color: var(--negro);
 }
 
 footer li{
     list-style: none;
+    margin: .4rem;
 }
 
 footer a{
@@ -211,17 +221,33 @@ footer a{
     color: var(--blanco);
 }
 
+footer a:hover{
+    text-decoration: underline;
+}
+
 footer ul li:first-child{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bolder;
     margin-bottom: 1rem;
 }
 
 footer ul:nth-child(4) li:nth-child(5){ 
-    /* no funciona */
-    font-size: 2rem;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    margin-top: 2rem;
 }
 
-footer ul:nth-child(5) {
-    grid-column-start: 6;
+footer .copyright {
+    margin-left: auto;
+    width: fit-content;
+    transform: translateY(-2rem);
+    font-size: 1.2rem;
+}
+
+.copyright > * {
+    margin-bottom: .2rem;
+}
+
+.copyright #logo {
+    margin-bottom: 1rem;
 }
